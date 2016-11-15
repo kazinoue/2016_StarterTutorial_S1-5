@@ -1,9 +1,9 @@
-program prjDice;
+program prjLesson4;
 
 uses
   System.StartUpCopy,
   FMX.Forms,
-  uDice in 'uDice.pas' {Form1};
+  Unit4 in 'Unit4.pas' {Form1};
 
 {$R *.res}
 
