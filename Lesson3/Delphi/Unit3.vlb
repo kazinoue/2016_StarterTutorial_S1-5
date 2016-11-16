@@ -1,8 +1,4 @@
-﻿[Switch1]
-Coordinates=10,180,65,58
-Visible=True
-
-[Button1]
+﻿[Button1]
 Coordinates=10,10,59,58
 
 [Layout1]
@@ -13,9 +9,6 @@ Coordinates=110,180,55,58
 Visible=True
 ExplicitSubNodes=Enabled
 
-[Edit1]
-Coordinates=217,10,44,58
-
 [Button2]
 Coordinates=79,10,59,58
 
@@ -24,7 +17,8 @@ Coordinates=148,10,59,58
 
 []
 Coordinates=157,87,91,36
+Visible=True
 
-[BindingsList1]
-Coordinates=157,87,91,36
+[Memo1]
+Coordinates=26,87,57,58
 
