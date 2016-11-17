@@ -31,6 +31,9 @@ procedure TForm1.Memo1KeyDown(Sender: TObject; var Key: Word; var KeyChar: Char;
   Shift: TShiftState);
 begin
   Edit1.Text := KeyChar;
+
+	// Key ‚Í WordŒ^ = ”šŒ^‚È‚Ì‚ÅAEdit2 ‚Å•\¦‚·‚é‚½‚ß‚É‚Í
+	// •¶š—ñŒ^‚É•ÏŠ·‚¹‚Ë‚Î‚È‚ç‚È‚¢B
   Edit2.Text := Key.toString;
 end;
 

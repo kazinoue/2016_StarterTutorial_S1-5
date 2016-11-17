@@ -35,7 +35,9 @@ void __fastcall TForm2::Button2Click(TObject *Sender)
 
 void __fastcall TForm2::Timer1Timer(TObject *Sender)
 {
-	// 現在の日付時刻を DateTimeToStr で文字列に変換して表示している。
+	// 現在の日付時刻は Now() で取得できます。
+	// 取得した値は TDateTime 型であり、これはそのまま表示できないため、
+	// DateTimetoStr() という関数で文字列型に変換しています。
 	Memo1->Lines->Insert(0,DateTimeToStr(Now()));
 }
 //---------------------------------------------------------------------------

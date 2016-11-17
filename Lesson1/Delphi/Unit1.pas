@@ -37,6 +37,8 @@ procedure TForm1.Button1Click(Sender: TObject);
 // ・[オブジェクトインスペクタ]から[イベント]タブの[OnClick]右側をダブルクリックする。
 // ・フォーム内のボタン（対象オブジェクト）をダブルクリックする。
 begin
+	// Lines.Insert は指定の場所に行を差し込む処理です。
+	// 0 は 0 行目に差し込む = 先頭行に差し込むことを意味します。
   Memo1.Lines.Insert(0,'シングルクリック');
 end;
 
@@ -59,6 +61,7 @@ end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
+	// 行をすべて消したいので Lines.Clear を実行しています。
   Memo1.Lines.Clear;
 end;
 

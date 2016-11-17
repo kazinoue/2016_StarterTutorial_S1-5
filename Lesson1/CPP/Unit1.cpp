@@ -21,7 +21,11 @@ __fastcall TForm2::TForm2(TComponent* Owner)
 void __fastcall TForm2::Button1Click(TObject *Sender)
 {
 	// 文字列を記述するときは L"" と表現します。
-	// Delphi の場合とは違って -> を用いている点にご注意ください。
+	// Delphi では Memo1.Lines.Insert と記述しましたが、
+	// C++ の場合は . のかわりに -> を用いている点にご注意ください。
+
+	// Lines->Insert は指定の場所に行を差し込む処理です。
+	// 0 は 0 行目に差し込む = 先頭行に差し込むことを意味します。
 	Memo1->Lines->Insert(0,L"シングルクリック");
 }
 //---------------------------------------------------------------------------
@@ -48,6 +52,7 @@ void __fastcall TForm2::Button1MouseUp(TObject *Sender, TMouseButton Button, TSh
 
 void __fastcall TForm2::Button2Click(TObject *Sender)
 {
+	// 行をすべて消したいので Lines->Clear(); を実行しています。
 	Memo1->Lines->Clear();
 }
 //---------------------------------------------------------------------------
