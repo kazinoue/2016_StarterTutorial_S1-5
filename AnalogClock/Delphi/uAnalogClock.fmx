@@ -9,37 +9,45 @@ object Form1: TForm1
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Circle1: TCircle
+    Align = Fit
     Size.Width = 320.000000000000000000
-    Size.Height = 320.000000000000000000
+    Size.Height = 319.999816894531300000
     Size.PlatformDefault = False
     object Edit1: TEdit
       Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Scale
       TabOrder = 0
-      Position.X = 112.000000000000000000
-      Position.Y = 192.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
     end
     object RoundRectHour: TRoundRect
-      Position.X = 152.000000000000000000
-      Position.Y = 80.000000000000000000
+      Align = Scale
+      Position.X = 151.055969238281300000
+      Position.Y = 79.503067016601560000
       RotationAngle = 90.000000000000000000
       RotationCenter.Y = 1.000000000000000000
-      Size.Width = 16.000000000000000000
-      Size.Height = 80.000000000000000000
+      Size.Width = 15.900650024414060000
+      Size.Height = 79.503067016601560000
       Size.PlatformDefault = False
     end
     object RoundRectMinute: TRoundRect
-      Position.X = 152.000000000000000000
+      Align = Scale
+      Position.X = 151.055969238281300000
       RotationCenter.Y = 1.000000000000000000
-      Size.Width = 16.000000000000000000
-      Size.Height = 160.000000000000000000
+      Size.Width = 15.900650024414060000
+      Size.Height = 159.006134033203100000
       Size.PlatformDefault = False
     end
     object RoundRectSecond: TRoundRect
-      Position.X = 158.000000000000000000
+      Align = Scale
+      Position.X = 157.018722534179700000
       RotationAngle = 90.000000000000000000
       RotationCenter.Y = 1.000000000000000000
-      Size.Width = 4.000000000000000000
-      Size.Height = 160.000000000000000000
+      Size.Width = 3.975143432617188000
+      Size.Height = 159.006134033203100000
       Size.PlatformDefault = False
     end
   end
